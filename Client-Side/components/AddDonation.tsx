@@ -25,11 +25,11 @@ const AddDonation: React.FC<Props> = ({ saveDonation }) => {
         </div>
         <div className='Form--field'>
           <label htmlFor='body'>Donation Amount</label>
-          <input onChange={handleForm} type='text' id='amount' />
+          <input onChange={handleForm} type='number' id='amount' />
         </div>
         <div className='Form--field'>
           <label htmlFor='body'>Tip Amount</label>
-          <input onChange={handleForm} type='text' id='tip' />
+          <input onChange={handleForm} type='number' id='tip' />
         </div>
       </div>
       <button
