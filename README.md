@@ -20,15 +20,21 @@ There are two types(interfaces) that are included:
 User: the schema includes 
 
 id: number 
+
 firstName: string 
+
 lastName: string 
+
 email: string
 
 Donation: The schema includes 
 
 id: number 
+
 userid: number 
+
 amount: number 
+
 tip: number
 
 The server side consists of APIs which will be called as per the user's request. 
