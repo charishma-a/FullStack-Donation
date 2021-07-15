@@ -1,4 +1,6 @@
 # FullStack-Donation-Web-Application
+This is a full Stack donation web application in which the users can enter their details regarding the donations. The entered details will be visible on the web application when the user clicks "Add Donation" button. I haven't used any kind of database for this project. The data was stored in a json file db.json and it is retrieved with the help of APIs onto the front end.
+
 Here, we are trying to pull the data stored in a JSON file on to the front end. 
 There is a client side and server side.  
 
