@@ -9,6 +9,7 @@ const DONATION_LIST_URL: string = 'http://localhost:5000/donationlist'
 const DONATION_DELETE_URL: string = 'http://localhost:5000/deletedonation/'
 const DONATION_INSERT_URL: string = 'http://localhost:5000/newdonation/'
 const USER_LIST_URL: string = 'http://localhost:5000/userlist'
+const SINGLE_USER_URL: string = 'http://localhost:5000/getuser/'
 
 //Data Fetching
 
@@ -18,9 +19,19 @@ export default function IndexPage({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [donationList, setDonationList] = React.useState(donations)
   const [UserList, setUserList] = React.useState(users)
+  const [formError, setFormError] = React.useState('')
 
   const addDonation = async (e: React.FormEvent, formData: Donation) => {
     e.preventDefault()
+
+    setFormError('')
+
+    const userExist = await  fetch(`${SINGLE_USER_URL}${formData.userid}`);
+
+    const userData = await userExist.json();
+
+    if (userData.id === formData.userid) {
+  
     const donation: Donation = {
       id: new Date().getTime(),
       userid: formData.userid,
@@ -38,14 +49,24 @@ export default function IndexPage({
      const donationList: Donation[] = await res.json();
 
     setDonationList([...donationList])
+    } else {
+      setFormError('Invalid User ID. Please check');
+    }
   }
 
   const deleteDonation = async (id: number) => {
+    setFormError('')
     const delReq = await  fetch(`${DONATION_DELETE_URL}${id}`, { method: 'DELETE' });
+    console.log('delReq.status:' + delReq.status );
+    if (delReq.status === 201) {
     const res = await fetch(DONATION_LIST_URL);
     const donations: Donation[] = await res.json()
-
     setDonationList(donations)
+    } else {
+      setFormError('Internal Server Error. Please check with Admin');
+    }
+
+ 
   }
 
   if (!donationList) return <h1>Loading...</h1>
@@ -53,7 +74,8 @@ export default function IndexPage({
   return (
     <main className='container'>
       <h1>Donations</h1>
-      <AddDonation saveDonation={addDonation} />
+      <AddDonation saveDonation={addDonation}/>
+      <div className="errorText">{formError}</div>
       {donationList.map((donation: Donation) => {
         return <DonationDetail key={donation.id} deleteDonation={deleteDonation} donation={donation} userDet={UserList} />
 })}
