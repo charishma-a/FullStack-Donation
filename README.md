@@ -6,8 +6,10 @@ There is a client side and server side.
 
 1. Client-Side
 2. Server-Side 
+
 Client side runs on http://localhost:3000
 Server side runs on http://localhost:6000
+
 Both the servers should run concurrently. 
 
 The client side consists of 2 components
