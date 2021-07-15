@@ -7,7 +7,7 @@ There is a client side and server side.
 1. Client-Side
 2. Server-Side 
 
-Client side runs on http://localhost:3000 => Instructions to invoke the client are provided in readme.md of folder Client-Side. 
+Client side runs on http://localhost:3000  => Instructions to invoke the client are provided in readme.md of folder Client-Side. 
 
 Server side runs on http://localhost:6000 => Instructions to invoke the server are provided in readme.md of folder Server-Side.
 
