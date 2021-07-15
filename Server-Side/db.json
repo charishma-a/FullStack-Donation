@@ -2,14 +2,20 @@
   "user": [
     {
       "id": "1",
-      "firstName": "Alex",
-      "lastName": "Smith",
+      "firstName": "Rachel",
+      "lastName": "Green",
+      "email": "email1@gmail.com"
+    },
+    {
+      "id": "2",
+      "firstName": "Monica",
+      "lastName": "Geller",
       "email": "email1@gmail.com"
     },
     {
       "id": "3",
-      "firstName": "David",
-      "lastName": "smith",
+      "firstName": "Chandler",
+      "lastName": "Bing",
       "email": "email3D@gmail.com"
     }
   ],
@@ -25,5 +31,11 @@
     "userid": 2,
     "amount": 2000,
     "tip": 20
+    }
+    {
+    "id": 3,
+    "userid": 3,
+    "amount": 3000,
+    "tip": 30
     }
     ]
