@@ -18,6 +18,7 @@ The client side consists of 2 components
 2. DonationDetail 
 
 addDonation provides the front end of our web application where the user can add his details and make a donation. 
+
 DonationDetail provides the list of donations made onto the front end. This also has a delete method where the donations can be deleted.
 
 There are two types(interfaces) that are included:
