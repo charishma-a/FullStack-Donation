@@ -63,8 +63,8 @@ button {
   border: 1px solid #684849;
   color: #bb0d16;
 }
-  
-  .Form {
+
+.Form {
   /* background: #fff; */
   padding: 1rem;
   margin-bottom: 1rem;
@@ -76,13 +76,13 @@ button {
 .Form--field label{
   color: #ffff;
 }
-}
 
 .Form--field {
   margin: auto;
   width: 60%;
   
 }
+
 
 .Form--field input {
   display: block;
@@ -104,11 +104,15 @@ button {
   margin: auto;
 }
 .container {
- 
   width: 1100px;
   height: 1000px;
   background-size: contain;
   max-width: 100000px;
   margin: auto;
   /* padding: 1rem; */
+}
+
+.errorText {
+  text-align: center;
+  color: red;
 }
