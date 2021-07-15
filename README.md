@@ -13,7 +13,7 @@ Server side runs on http://localhost:6000
 
 Both the servers should run concurrently. 
 
-The client side consists of 2 components
+The client side consists of 2 main components which will provide interaction with users. 
 
 1. addDonation
 2. DonationDetail 
@@ -44,5 +44,5 @@ amount: number
 
 tip: number
 
-The server side consists of APIs which will be called as per the user's request. 
-There are 6 APIs for donation interface and 5 APIs for user Interface for all the CRUD operations.
+The server side is REST API which will be called as per the user's request. 
+There are 6 endpoints for Donation Interface and 5 endpoints for User Interface for all the CRUD operations.
