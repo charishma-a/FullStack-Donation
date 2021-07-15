@@ -17,12 +17,15 @@ DonationDetail provides the list of donations made onto the front end. This also
 
 There are two types(interfaces) that are included:
 
-User: the schema includes id: 
-number firstName: string 
+User: the schema includes 
+
+id: number 
+firstName: string 
 lastName: string 
 email: string
 
 Donation: The schema includes 
+
 id: number 
 userid: number 
 amount: number 
