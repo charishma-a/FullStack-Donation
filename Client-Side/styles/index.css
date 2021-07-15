@@ -63,11 +63,19 @@ button {
   border: 1px solid #684849;
   color: #bb0d16;
 }
-
-.Form {
+  
+  .Form {
   /* background: #fff; */
   padding: 1rem;
   margin-bottom: 1rem;
+  background-image: linear-gradient(rgba(61, 60, 60, 0.8), rgba(0, 0, 0, 0.1)),url("./needy.jpeg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Form--field label{
+  color: #ffff;
+}
 }
 
 .Form--field {
@@ -96,9 +104,7 @@ button {
   margin: auto;
 }
 .container {
-  background-image: url("./needy.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+ 
   width: 1100px;
   height: 1000px;
   background-size: contain;
