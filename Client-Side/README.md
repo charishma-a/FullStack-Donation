@@ -1,5 +1,6 @@
 # Client Side 
-
+Go to the directory where your file is stored. 
+cd Client-Side
 
 ## Available Scripts
 
@@ -11,7 +12,7 @@ npm install
 yarn
 ```
 
-You're good to go. Finally, run the development server:
+Finally, run the development server:
 
 ```bash
 npm run client
