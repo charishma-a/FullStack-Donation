@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background: #f5f6f7;
+  color:rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-style:unset;
+  font-weight: bolder;
+  background-color: seashell;
+}
+
+/* .container {
+  max-width: 820px;
+  margin: auto;
+  padding: 1rem;
+} */
+.container > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color:midnightblue;
+  background-color: mintcream;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.Card {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Card--body {
+  width: 60%;
+}
+.Card--body-text {
+  color: #999;
+}
+
+.Card__button {
+  background: #fff;
+  border: 1px solid #684849;
+  color: #bb0d16;
+}
+
+.Form {
+  /* background: #fff; */
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Form--field {
+  margin: auto;
+  width: 60%;
+  
+}
+
+.Form--field input {
+  display: block;
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #bb0d16;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+  
+  
+}
+
+.Form__button {
+  background: #bb0d16;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+.container {
+  background-image: url("./needy.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 1100px;
+  height: 1000px;
+  background-size: contain;
+  max-width: 100000px;
+  margin: auto;
+  /* padding: 1rem; */
+}

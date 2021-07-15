@@ -1,0 +1,17 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "firstName": "Alex",
+      "lastName": "Smith",
+      "email": "email1@gmail.com"
+    },
+    {
+      "id": "3",
+      "firstName": "David",
+      "lastName": "smith",
+      "email": "email3D@gmail.com"
+    }
+  ],
+  "donation": []
+}
